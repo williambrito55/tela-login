@@ -14,17 +14,19 @@ Você pode visualizar o projeto em funcionamento através do link abaixo:
 ## 🚀 Funcionalidades
 
 * **Glassmorphism Design:** Efeito de desfoque de fundo (`backdrop-filter`) que se adapta ao papel de parede.
-* **Feedback Interativo:** O botão de login reage ao clique, simulando uma verificação de dados.
-* **Validação de Formulário:** Campos de e-mail e senha com validação nativa.
+* **Feedback Interativo:** O botão de login reage ao clique com estados visuais controlados por classes CSS.
+* **Arquitetura BEM:** CSS organizado seguindo a metodologia Block-Element-Modifier para melhor manutenção.
+* **Responsividade Total:** Interface otimizada para dispositivos móveis (Mobile-Friendly).
+* **Acessibilidade (A11y):** Implementação de labels e suporte para leitores de tela (SR-only).
 * **Animações de Transição:** Suavidade ao passar o mouse (hover) e ao focar nos campos de entrada.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **HTML5**: Estrutura do formulário e ícones.
-* **CSS3**: Estilização avançada, gradientes e fontes personalizadas (Poppins via Google Fonts).
-* **JavaScript**: Lógica de simulação de login e manipulação dinâmica de estados do botão e mensagens.
+* **HTML5**: Estrutura semântica e acessível.
+* **CSS3**: Estilização avançada com BEM, Glassmorphism e Flexbox.
+* **JavaScript**: Lógica de simulação de login e manipulação de estados via classes.
 
 ---
 
