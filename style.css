@@ -14,7 +14,7 @@ body {
     position: relative;
 }
 
-.main-header {
+.login-header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -25,7 +25,7 @@ body {
     z-index: 1000;
 }
 
-.nav-container {
+.login-header__nav {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -34,20 +34,20 @@ body {
     padding: 0 40px;
 }
 
-.logo {
+.login-header__logo {
     color: #fff;
     font-size: 1.5em;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
-.nav-links {
+.login-header__links {
     display: flex;
     list-style: none;
     gap: 25px;
 }
 
-.nav-links a {
+.login-header__links a {
     color: #fff;
     text-decoration: none;
     font-size: 0.95em;
@@ -56,12 +56,13 @@ body {
     border-bottom: 2px solid transparent;
 }
 
-.nav-links a:hover {
+.login-header__links a:hover {
     border-bottom: 2px solid #fff;
 }
 
-.container {
-    width: 400px;
+.login-page {
+    width: 90%;
+    max-width: 400px;
     background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
@@ -72,13 +73,13 @@ body {
     margin-top: 60px;
 }
 
-.container h1 {
+.login-form__title {
     font-size: 2.5em;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.caixa-de-entrada {
+.login-form__input-group {
     position: relative;
     width: 100%;
     height: 50px;
@@ -86,7 +87,7 @@ body {
     border-bottom: 2px solid #fff;
 }
 
-.caixa-de-entrada input {
+.login-form__input-group input {
     width: 100%;
     height: 100%;
     background: transparent;
@@ -97,11 +98,11 @@ body {
     padding-right: 35px;
 }
 
-.caixa-de-entrada input::placeholder {
+.login-form__input-group input::placeholder {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.icon-input {
+.login-form__input-icon {
     position: absolute;
     right: 5px;
     top: 50%;
@@ -110,30 +111,34 @@ body {
     height: 20px;
 }
 
-.lembrar-esquecer-senha {
+.login-form__extra {
     display: flex;
     justify-content: space-between;
     font-size: 0.9em;
     margin-bottom: 25px;
 }
 
-.lembrar-esquecer-senha label {
+.login-form__checkbox-label {
     display: flex;
     align-items: center;
     gap: 5px;
     cursor: pointer;
 }
 
-.lembrar-esquecer-senha input {
+.login-form__checkbox {
     accent-color: #fff;
 }
 
-.lembrar-esquecer-senha a {
+.login-form__forgot-link {
     color: #fff;
     text-decoration: none;
 }
 
-.bnt-login {
+.login-form__forgot-link:hover {
+    text-decoration: underline;
+}
+
+.login-form__button {
     width: 100%;
     height: 45px;
     background-color: #fff;
@@ -146,20 +151,55 @@ body {
     transition: 0.3s;
 }
 
-.bnt-login:hover {
+.login-form__button:hover {
     background-color: transparent;
     border: 2px solid #fff;
     color: #fff;
 }
 
-.link-de-registro {
+.login-form__button--success {
+    background-color: #27ae60 !important;
+    color: #fff !important;
+    border-color: #27ae60 !important;
+}
+
+.login-form__button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.login-form__feedback {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+.login-form__register {
     font-size: 0.9em;
     text-align: center;
     margin-top: 25px;
 }
 
-.link-de-registro a {
+.login-form__register-link {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+}
+
+.login-form__register-link:hover {
+    text-decoration: underline;
+}
+
+/* Accessibility Utility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }

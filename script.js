@@ -13,8 +13,7 @@ form.addEventListener('submit', (e) => {
     setTimeout(() => {
         // Sucesso na simulação
         btnLogar.innerText = "Logado!";
-        btnLogar.style.backgroundColor = "#27ae60";
-        btnLogar.style.color = "#fff";
+        btnLogar.classList.add('login-form__button--success');
 
         feedback.innerText = "Login realizado com sucesso! Redirecionando...";
         feedback.style.color = "#fff";
@@ -25,8 +24,7 @@ form.addEventListener('submit', (e) => {
             form.reset();
             btnLogar.innerText = "Login";
             btnLogar.disabled = false;
-            btnLogar.style.backgroundColor = "#fff";
-            btnLogar.style.color = "#333";
+            btnLogar.classList.remove('login-form__button--success');
             feedback.style.display = "none";
         }, 3000);
 

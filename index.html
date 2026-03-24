@@ -11,41 +11,46 @@
 </head>
 <body>
 
-    <header class="main-header">
-        <nav class="nav-container">
-            <div class="logo">WB</div>
-            <ul class="nav-links">
-                <li><a href="https://william-brito-dev.github.io/portifolio/" target="_blank" rel="external noopener noreferrer">Home</a></li>
+    <header class="login-header">
+        <nav class="login-header__nav">
+            <div class="login-header__logo">WB</div>
+            <ul class="login-header__links">
+                <li><a href="https://william-brito-dev.github.io/portifolio/" rel="external noopener noreferrer">Home</a></li>
                 <li><a href="mailto:contato.williambrito.dev@hotmail.com">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="container">
-          <form class="formulario" id="formLogin">
-            <h1>WB</h1>
-            <div class="caixa-de-entrada">
-                <input placeholder="E-mail" type="email" required>
-                <img src="publico/imgs/usuario.png" class="icon-input" alt="user">
+    <main class="login-page">
+          <form class="login-form" id="formLogin">
+            <h1 class="login-form__title">WB</h1>
+            
+            <div class="login-form__input-group">
+                <input id="email" placeholder="E-mail" type="email" required>
+                <label for="email" class="sr-only">E-mail</label>
+                <img src="publico/imgs/usuario.png" class="login-form__input-icon" alt="Ícone de usuário">
             </div>
-            <div class="caixa-de-entrada">
-                <input placeholder="Senha" type="password" required>
-                <img src="publico/imgs/senha.png" class="icon-input" alt="password">
+            
+            <div class="login-form__input-group">
+                <input id="password" placeholder="Senha" type="password" required>
+                <label for="password" class="sr-only">Senha</label>
+                <img src="publico/imgs/senha.png" class="login-form__input-icon" alt="Ícone de senha">
             </div>
-            <div class="lembrar-esquecer-senha">
-                <label>
-                    <input type="checkbox">
+            
+            <div class="login-form__extra">
+                <label class="login-form__checkbox-label">
+                    <input type="checkbox" class="login-form__checkbox">
                     Mantenha-me logado
                 </label>
-                <a href="#">Esqueci senha</a>
+                <a href="#" class="login-form__forgot-link">Esqueci senha</a>
             </div>
             
-            <button type="submit" class="bnt-login" id="btnLogar">Login</button>
+            <button type="submit" class="login-form__button" id="btnLogar">Login</button>
             
-            <p id="mensagem-feedback" style="display: none; text-align: center; margin-top: 15px; font-size: 0.85em; font-weight: 600;"></p>
+            <p id="mensagem-feedback" class="login-form__feedback" style="display: none;"></p>
 
-            <div class="link-de-registro">
-                <p>Não tem uma conta? <a href="#">Cadastre-se!</a></p>
+            <div class="login-form__register">
+                <p>Não tem uma conta? <a href="#" class="login-form__register-link">Cadastre-se!</a></p>
             </div>
           </form>  
     </main>
