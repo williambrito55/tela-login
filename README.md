@@ -2,7 +2,7 @@
 
 <h1 align="center">WB Login Interface</h1>
 
-![imagem de capa do porjeto](publico/imgs/capa.jpeg)
+![imagem de capa do porjeto](src/publico/imgs/capa.jpeg)
 
 
 ![status](https://img.shields.io/badge/status-em%20desenvolvimento-green?style=flat)
@@ -71,7 +71,7 @@ Consiste em uma interface de login moderna e elegante, desenvolvida com a técni
 
 ## Imagens
 
-![tela inicial](publico/imgs/print-01.png)
+![tela inicial](src/publico/imgs/print-01.png)
 
 <br>
 
